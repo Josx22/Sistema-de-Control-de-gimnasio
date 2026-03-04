@@ -1,0 +1,422 @@
+[
+  {
+    "ContainingType": "Gimnasio.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credenciales",
+        "Type": "GymApi.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.MaquinariaController",
+    "Method": "Get",
+    "RelativePath": "api/Maquinaria",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.MaquinariaController",
+    "Method": "Post",
+    "RelativePath": "api/Maquinaria",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "m",
+        "Type": "GymApi.Models.Maquinaria",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.MaquinariaController",
+    "Method": "Put",
+    "RelativePath": "api/Maquinaria/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "m",
+        "Type": "GymApi.Models.Maquinaria",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.MaquinariaController",
+    "Method": "Delete",
+    "RelativePath": "api/Maquinaria/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.MaquinariaController",
+    "Method": "SubirImagen",
+    "RelativePath": "api/Maquinaria/subir-imagen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "archivo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.PagosController",
+    "Method": "registrarGastosFijos",
+    "RelativePath": "api/Pagos/registrar-gastos-fijos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.PagosController",
+    "Method": "GetReporteFinanciero",
+    "RelativePath": "api/Pagos/reporte-contable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.PagosController",
+    "Method": "GetGanancias",
+    "RelativePath": "api/Pagos/total-mensual",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.PlanesController",
+    "Method": "Get",
+    "RelativePath": "api/Planes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "verInactivos",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.PlanesController",
+    "Method": "Post",
+    "RelativePath": "api/Planes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "p",
+        "Type": "GymApi.Models.PlanMembresia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.PlanesController",
+    "Method": "Put",
+    "RelativePath": "api/Planes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "p",
+        "Type": "GymApi.Models.PlanMembresia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.PlanesController",
+    "Method": "Delete",
+    "RelativePath": "api/Planes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.PlanesController",
+    "Method": "Desactivar",
+    "RelativePath": "api/Planes/{id}/desactivar",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.SuscripcionController",
+    "Method": "CancelarSocio",
+    "RelativePath": "api/Suscripcion/{id}/cancelar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.SuscripcionController",
+    "Method": "Pagar",
+    "RelativePath": "api/Suscripcion/{id}/pagar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.SuscripcionController",
+    "Method": "Asignar",
+    "RelativePath": "api/Suscripcion/asignar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Gimnasio.DTOs.SuscripcionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.SuscripcionController",
+    "Method": "CancelarManual",
+    "RelativePath": "api/Suscripcion/cancelar-manual/{idUsuario}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.SuscripcionController",
+    "Method": "GetHistorialPorUsuario",
+    "RelativePath": "api/Suscripcion/historial/{idUsuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.SuscripcionController",
+    "Method": "GetPendientes",
+    "RelativePath": "api/Suscripcion/pendientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.UsuariosController",
+    "Method": "Post",
+    "RelativePath": "api/Usuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "u",
+        "Type": "GymApi.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.UsuariosController",
+    "Method": "Get",
+    "RelativePath": "api/Usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.UsuariosController",
+    "Method": "Put",
+    "RelativePath": "api/Usuarios/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "u",
+        "Type": "GymApi.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.UsuariosController",
+    "Method": "PatchEstado",
+    "RelativePath": "api/Usuarios/{id}/estado",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nuevoEstado",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.UsuariosController",
+    "Method": "GetByDui",
+    "RelativePath": "api/Usuarios/buscar/{dui}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dui",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.UsuariosController",
+    "Method": "GetSoloClientes",
+    "RelativePath": "api/Usuarios/clientes-total",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.UsuariosController",
+    "Method": "GetEstatusSocios",
+    "RelativePath": "api/Usuarios/estatus-socios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gimnasio.Controllers.UsuariosController",
+    "Method": "GetByRol",
+    "RelativePath": "api/Usuarios/rol/{idRol}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRol",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

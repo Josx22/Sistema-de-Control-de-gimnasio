@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="22.0"
+      prefHeight="460.0" prefWidth="380.0"
+      styleClass="login-root"
+      stylesheets="@gym-empleado.css"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sv.arrupe.gym.gymempleado.LoginController">
+    <padding>
+        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+    </padding>
+
+    <!-- Logo / título -->
+    <VBox alignment="CENTER" spacing="4.0">
+        <Label text="GYM CONTROL" styleClass="login-title" />
+        <Label text="Panel de Empleados" styleClass="login-title-accent" />
+    </VBox>
+
+    <!-- Campos -->
+    <VBox spacing="10.0" maxWidth="300.0">
+        <Label text="Usuario" />
+        <TextField fx:id="txtUser" promptText="Nombre de usuario" maxWidth="Infinity" />
+
+        <Label text="Contraseña" />
+        <PasswordField fx:id="txtPass" promptText="••••••••" maxWidth="Infinity" />
+    </VBox>
+
+    <!-- Botón -->
+    <Button fx:id="btnLogin" maxWidth="300.0"
+            onAction="#onLoginButtonClick"
+            styleClass="btn-login"
+            text="Entrar al Sistema">
+        <font><Font name="Segoe UI Semibold" size="14.0" /></font>
+    </Button>
+
+    <!-- Error -->
+    <Label fx:id="lblError" styleClass="label-error"
+           wrapText="true" maxWidth="300.0" />
+
+</VBox>

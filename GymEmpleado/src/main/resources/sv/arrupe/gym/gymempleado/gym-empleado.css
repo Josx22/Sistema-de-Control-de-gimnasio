@@ -1,0 +1,824 @@
+/* ═══════════════════════════════════════════════════════════════════
+   GYM CONTROL – EMPLEADO STYLESHEET
+   Estética: Panel de operaciones profesional. Azul acero oscuro.
+   Mismo lenguaje que el socio (amarillo Smart Fit) pero identidad
+   propia de "personal de recepción": frío, eficiente, de confianza.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── FUENTES ──────────────────────────────────────────────────────── */
+/* Cargar desde: @font-face o asegurarse que las fuentes estén
+   disponibles en el sistema. JavaFX soporta fuentes del sistema
+   y fuentes cargadas manualmente en resources/fonts/              */
+
+/* ── VARIABLES (Simulated via root .root en JavaFX) ─────────────── */
+/* Paleta:
+   --navy:       #0D1B2A   fondo profundo
+   --steel:      #1B3A5C   paneles y sidebars
+   --accent:     #00C2FF   cian eléctrico (eco del amarillo socio pero frío)
+   --accent2:    #0077B6   azul medio para botones secundarios
+   --success:    #00B894   verde menta
+   --warning:    #F39C12   naranja (mismo que socio para coherencia sistémica)
+   --danger:     #E74C3C   rojo
+   --text-light: #ECF0F1   texto sobre fondos oscuros
+   --text-muted: #8FA3B1   texto secundario
+   --surface:    #162232   superficie de cards
+   --border:     #253D56   bordes sutiles
+*/
+
+/* ════════════════════════════════════════════════════════════════════
+   BASE – ROOT / SCENE
+   ════════════════════════════════════════════════════════════════════ */
+
+.root {
+    -fx-background-color: #0D1B2A;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-text-fill: #ECF0F1;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   LAYOUT CONTAINERS
+   ════════════════════════════════════════════════════════════════════ */
+
+VBox {
+    -fx-background-color: transparent;
+}
+
+HBox {
+    -fx-background-color: transparent;
+}
+
+/* Paneles principales (los VBox con borde en el FXML) */
+.panel-card {
+    -fx-background-color: #162232;
+    -fx-background-radius: 14;
+    -fx-border-color: #253D56;
+    -fx-border-width: 1;
+    -fx-border-radius: 14;
+    -fx-padding: 18 20 18 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 16, 0, 0, 4);
+}
+
+/* Panel inferior tabla */
+.panel-table {
+    -fx-background-color: #162232;
+    -fx-background-radius: 14;
+    -fx-border-color: #253D56;
+    -fx-border-width: 1;
+    -fx-border-radius: 14;
+    -fx-padding: 14 16 14 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 12, 0, 0, 3);
+}
+
+.label-nombre {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0D1B2A; /* Color oscuro para contraste en fondos claros */
+    -fx-font-family: "Segoe UI Semibold"; /* Fuente más gruesa para mejor legibilidad */
+    -fx-padding: 4 0 4 0;
+}
+/* ════════════════════════════════════════════════════════════════════
+   TIPOGRAFÍA
+   ════════════════════════════════════════════════════════════════════ */
+
+Label {
+    -fx-text-fill: #ECF0F1;
+    -fx-font-family: "Segoe UI";
+}
+
+/* Título de sección (los Label bold size 16 del FXML) */
+.label-section-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00C2FF;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+/* Nombre del socio verificado (lblNombre) */
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="720.0" prefWidth="980.0" spacing="12.0"
+      stylesheets="@gym-empleado.css"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sv.arrupe.gym.gymempleado.HelloController">
+    <padding><Insets bottom="16.0" left="16.0" right="16.0" top="16.0" /></padding>
+
+    <children>
+        <HBox spacing="14.0" VBox.vgrow="NEVER">
+            <children>
+
+                <!-- ── PANEL IZQUIERDO: CONTROL DE ACCESO ─────────────── -->
+                <VBox fx:id="sectionAuditoria" prefWidth="430.0" spacing="14.0"
+                      styleClass="panel-card">
+                    <children>
+
+                        <Label text="Control de Acceso / Buscador"
+                               styleClass="label-section-title" />
+
+                        <HBox spacing="10.0">
+                            <children>
+                                <TextField fx:id="txtBuscarDui"
+                                           promptText="DUI del Cliente"
+                                           HBox.hgrow="ALWAYS" />
+                                <Button onAction="#onActionBuscar"
+                                        prefHeight="36.0" prefWidth="90.0"
+                                        text="Verificar"
+                                        styleClass="btn-verificar" />
+                            </children>
+                        </HBox>
+
+                        <Separator />
+
+                        <Label fx:id="lblNombre" text="---"
+                               wrapText="true"
+                               styleClass="label-nombre" />
+
+                        <Label fx:id="lblVence" text="Membresía: Sin cargar"
+                               styleClass="label-membresia" />
+
+                        <Label fx:id="lblEstado" text="ESTADO"
+                               styleClass="label-estado, label-estado-sinplan" />
+
+                        <Region VBox.vgrow="ALWAYS" />
+
+                        <HBox spacing="10.0">
+                            <children>
+                                <Button onAction="#onActionCancelarPlan"
+                                        prefHeight="42.0"
+                                        styleClass="btn-cancelar-plan"
+                                        text="CANCELAR PLAN ACTUAL"
+                                        HBox.hgrow="ALWAYS" maxWidth="Infinity">
+                                    <font><Font name="Segoe UI Semibold" size="11.0" /></font>
+                                </Button>
+
+                                <Button fx:id="btnSuspender"
+                                        onAction="#onActionSuspenderManual"
+                                        prefHeight="42.0"
+                                        styleClass="btn-suspender"
+                                        text="SUSPENDER CUENTA"
+                                        HBox.hgrow="ALWAYS" maxWidth="Infinity">
+                                    <font><Font name="Segoe UI Semibold" size="11.0" /></font>
+                                </Button>
+                            </children>
+                        </HBox>
+
+                    </children>
+                </VBox>
+
+                <!-- ── PANEL DERECHO: INSCRIPCIÓN Y RENOVACIÓN ──────────── -->
+                <VBox prefWidth="490.0" spacing="12.0"
+                      styleClass="panel-card"
+                      HBox.hgrow="ALWAYS">
+                    <children>
+
+                        <Label text="Inscripción / Activación"
+                               styleClass="label-section-title" />
+
+                        <GridPane hgap="10.0" vgap="10.0">
+                            <children>
+                                <TextField fx:id="txtNom"  promptText="Nombre" />
+                                <TextField fx:id="txtApe"  promptText="Apellido"
+                                           GridPane.columnIndex="1" />
+                                <TextField fx:id="txtDuiReg" promptText="DUI"
+                                           GridPane.rowIndex="1" />
+                                <TextField fx:id="txtUser"  promptText="Usuario Web"
+                                           GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <PasswordField fx:id="txtPass" promptText="Password"
+                                               GridPane.rowIndex="2" />
+                                <Label text="Solo llene para nuevos socios"
+                                       styleClass="label-hint"
+                                       GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </children>
+                            <columnConstraints>
+                                <ColumnConstraints prefWidth="215.0" hgrow="ALWAYS" />
+                                <ColumnConstraints prefWidth="215.0" hgrow="ALWAYS" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                            </rowConstraints>
+                        </GridPane>
+
+                        <Separator />
+
+                        <Label text="Asignar Nuevo Plan al socio seleccionado"
+                               styleClass="label-subsection" />
+
+                        <ComboBox fx:id="cbPlanes" maxWidth="Infinity"
+                                  prefHeight="38.0"
+                                  promptText="Seleccionar tipo de membresía..." />
+
+                        <Button onAction="#onActionAsignarMembresiaSimple"
+                                maxWidth="Infinity"
+                                styleClass="btn-activar"
+                                text="SOLO ACTIVAR MEMBRESÍA">
+                            <font><Font name="Segoe UI Semibold" size="12.0" /></font>
+                        </Button>
+
+                        <Button onAction="#onActionRegistrar"
+                                prefHeight="52.0" maxWidth="Infinity"
+                                styleClass="btn-registrar"
+                                text="REGISTRAR NUEVO Y ACTIVAR">
+                            <font><Font name="Segoe UI Semibold" size="13.0" /></font>
+                        </Button>
+
+                    </children>
+                </VBox>
+
+            </children>
+        </HBox>
+
+        <!-- ── PANEL INFERIOR: TABLA DE SOCIOS ─────────────────────── -->
+        <VBox VBox.vgrow="ALWAYS" spacing="8.0"
+              styleClass="panel-table">
+            <children>
+
+                <Label text="Lista de Clientes Registrados"
+                       styleClass="label-section-title" />
+
+                <TableView fx:id="tblSociosGlobal"
+                           onMouseClicked="#onTableClicked"
+                           VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colDui"    prefWidth="160.0" text="DUI" />
+                        <TableColumn fx:id="colNombre" prefWidth="300.0" text="Nombre Completo" />
+                        <TableColumn fx:id="colStatus" prefWidth="450.0" text="Estado  |  Plan  |  Vencimiento" />
+                    </columns>
+                </TableView>
+
+                <Button onAction="#cargarTablaGlobal"
+                        text="↺  Refrescar Listado"
+                        styleClass="btn-refrescar" />
+
+            </children>
+        </VBox>
+
+    </children>
+</VBox>
+
+
+/* Estado del socio (lblEstado) */
+.label-estado {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+.label-estado-solvente {
+    -fx-text-fill: #0D1B2A;
+    -fx-background-color: #00B894;
+}
+
+.label-estado-pendiente {
+    -fx-text-fill: #0D1B2A;
+    -fx-background-color: #F39C12;
+}
+
+.label-estado-suspendido {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #E74C3C;
+}
+
+.label-estado-sinplan {
+    -fx-text-fill: #8FA3B1;
+    -fx-background-color: #253D56;
+}
+
+/* Vencimiento membresía (lblVence) */
+.label-membresia {
+    -fx-text-fill: #8FA3B1;
+    -fx-font-size: 12px;
+}
+
+/* Label ayuda / hint */
+.label-hint {
+    -fx-font-size: 10px;
+    -fx-text-fill: #5D7A8A;
+    -fx-font-style: italic;
+}
+
+/* Label azul para "Asignar plan" */
+.label-subsection {
+    -fx-text-fill: #00C2FF;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   INPUTS – TEXTFIELD / PASSWORDFIELD
+   ════════════════════════════════════════════════════════════════════ */
+
+TextField,
+PasswordField {
+    -fx-background-color: #0D1B2A;
+    -fx-background-radius: 8;
+    -fx-border-color: #253D56;
+    -fx-border-radius: 8;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #ECF0F1;
+    -fx-prompt-text-fill: #4A6274;
+    -fx-padding: 8 12;
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI";
+}
+
+TextField:focused,
+PasswordField:focused {
+    -fx-border-color: #00C2FF;
+    -fx-effect: dropshadow(gaussian, rgba(0,194,255,0.25), 8, 0, 0, 0);
+    -fx-background-color: #111F2E;
+}
+
+TextField:hover,
+PasswordField:hover {
+    -fx-border-color: #3A6282;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   COMBOBOX
+   ════════════════════════════════════════════════════════════════════ */
+
+ComboBox {
+    -fx-background-color: #0D1B2A;
+    -fx-border-color: #253D56;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-width: 1.5;
+    -fx-padding: 4 8;
+}
+
+ComboBox .list-cell {
+    -fx-text-fill: #ECF0F1;
+    -fx-background-color: #0D1B2A;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+}
+
+ComboBox:focused {
+    -fx-border-color: #00C2FF;
+    -fx-effect: dropshadow(gaussian, rgba(0,194,255,0.2), 6, 0, 0, 0);
+}
+
+ComboBox .arrow-button {
+    -fx-background-color: #1B3A5C;
+    -fx-background-radius: 0 8 8 0;
+    -fx-padding: 0 10;
+}
+
+ComboBox .arrow {
+    -fx-background-color: #00C2FF;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #162232;
+    -fx-border-color: #253D56;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 16, 0, 0, 4);
+}
+
+.combo-box-popup .list-cell {
+    -fx-text-fill: #ECF0F1;
+    -fx-background-color: #162232;
+    -fx-padding: 8 14;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #1B3A5C;
+    -fx-text-fill: #00C2FF;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #00C2FF;
+    -fx-text-fill: #0D1B2A;
+    -fx-font-weight: bold;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   BOTONES
+   ════════════════════════════════════════════════════════════════════ */
+
+Button {
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+    -fx-padding: 10 18;
+    -fx-border-width: 0;
+}
+
+/* Botón principal – Verificar DUI */
+.btn-verificar {
+    -fx-background-color: #00C2FF;
+    -fx-text-fill: #0D1B2A;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,194,255,0.35), 10, 0, 0, 2);
+}
+
+.btn-verificar:hover {
+    -fx-background-color: #33CCFF;
+    -fx-effect: dropshadow(gaussian, rgba(0,194,255,0.55), 14, 0, 0, 3);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.btn-verificar:pressed {
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+    -fx-background-color: #00A8E0;
+}
+
+/* Botón acción verde – Registrar Nuevo y Activar */
+.btn-registrar {
+    -fx-background-color: #00B894;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 13 18;
+    -fx-effect: dropshadow(gaussian, rgba(0,184,148,0.4), 10, 0, 0, 2);
+}
+
+.btn-registrar:hover {
+    -fx-background-color: #00CC9F;
+    -fx-effect: dropshadow(gaussian, rgba(0,184,148,0.6), 14, 0, 0, 3);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.btn-registrar:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-background-color: #009E80;
+}
+
+/* Botón azul medio – Solo Activar Membresía */
+.btn-activar {
+    -fx-background-color: #0077B6;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+.btn-activar:hover {
+    -fx-background-color: #0096D4;
+    -fx-effect: dropshadow(gaussian, rgba(0,150,212,0.4), 10, 0, 0, 2);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.btn-activar:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Botón naranja – Cancelar Plan */
+.btn-cancelar-plan {
+    -fx-background-color: #E67E22;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(230,126,34,0.35), 8, 0, 0, 2);
+}
+
+.btn-cancelar-plan:hover {
+    -fx-background-color: #F39C12;
+    -fx-effect: dropshadow(gaussian, rgba(243,156,18,0.55), 12, 0, 0, 3);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.btn-cancelar-plan:pressed {
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+}
+
+/* Botón rojo – Suspender Cuenta */
+.btn-suspender {
+    -fx-background-color: #C0392B;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(192,57,43,0.35), 8, 0, 0, 2);
+}
+
+.btn-suspender:hover {
+    -fx-background-color: #E74C3C;
+    -fx-effect: dropshadow(gaussian, rgba(231,76,60,0.55), 12, 0, 0, 3);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.btn-suspender:pressed {
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+}
+
+/* Botón ghost/neutro – Refrescar */
+.btn-refrescar {
+    -fx-background-color: transparent;
+    -fx-border-color: #253D56;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #8FA3B1;
+    -fx-font-size: 12px;
+}
+
+.btn-refrescar:hover {
+    -fx-border-color: #00C2FF;
+    -fx-text-fill: #00C2FF;
+    -fx-background-color: rgba(0,194,255,0.05);
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   LOGIN BUTTONS
+   ════════════════════════════════════════════════════════════════════ */
+
+.btn-login {
+    -fx-background-color: linear-gradient(to right, #0077B6, #00C2FF);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 20;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,194,255,0.4), 12, 0, 0, 3);
+}
+
+.btn-login:hover {
+    -fx-background-color: linear-gradient(to right, #0096D4, #33CCFF);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-effect: dropshadow(gaussian, rgba(0,194,255,0.6), 16, 0, 0, 4);
+}
+
+.btn-login:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   TABLA DE SOCIOS
+   ════════════════════════════════════════════════════════════════════ */
+
+TableView {
+    -fx-background-color: transparent;
+    -fx-border-color: #253D56;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-table-cell-border-color: transparent;
+}
+
+TableView .column-header-background {
+    -fx-background-color: #1B3A5C;
+    -fx-background-radius: 10 10 0 0;
+}
+
+TableView .column-header,
+TableView .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-size: 38;
+}
+
+TableView .column-header .label {
+    -fx-text-fill: #00C2FF;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-padding: 0 8;
+}
+
+TableView .table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+TableView .table-row-cell:odd {
+    -fx-background-color: #111F2E;
+}
+
+TableView .table-row-cell:even {
+    -fx-background-color: #162232;
+}
+
+TableView .table-row-cell:hover {
+    -fx-background-color: #1B3A5C;
+}
+
+TableView .table-row-cell:selected {
+    -fx-background-color: #00426B;
+    -fx-border-color: #00C2FF;
+    -fx-border-width: 0 0 0 3;
+}
+
+TableView .table-cell {
+    -fx-text-fill: #D0DDE8;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-padding: 8 10;
+    -fx-border-color: transparent;
+}
+
+TableView .table-row-cell:selected .table-cell {
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Scrollbar de la tabla */
+TableView .scroll-bar:vertical,
+TableView .scroll-bar:horizontal {
+    -fx-background-color: #0D1B2A;
+}
+
+TableView .scroll-bar:vertical .thumb,
+TableView .scroll-bar:horizontal .thumb {
+    -fx-background-color: #253D56;
+    -fx-background-radius: 4;
+}
+
+TableView .scroll-bar:vertical .thumb:hover,
+TableView .scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #00C2FF;
+}
+
+TableView .scroll-bar .increment-button,
+TableView .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-shape: "";
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   SEPARADOR
+   ════════════════════════════════════════════════════════════════════ */
+
+Separator {
+    -fx-background-color: #253D56;
+}
+
+Separator .line {
+    -fx-border-color: #253D56;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   SCROLLBAR GLOBAL
+   ════════════════════════════════════════════════════════════════════ */
+
+.scroll-bar {
+    -fx-background-color: #0D1B2A;
+    -fx-padding: 0;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #253D56;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #00C2FF;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 2;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: #4A6274;
+    -fx-shape: " ";
+    -fx-padding: 0;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   ALERT / DIALOGS (por si se usan Alert.showAndWait())
+   ════════════════════════════════════════════════════════════════════ */
+
+.dialog-pane {
+    -fx-background-color: #162232;
+    -fx-border-color: #253D56;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #1B3A5C;
+    -fx-background-radius: 12 12 0 0;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #ECF0F1;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .content.label {
+    -fx-text-fill: #8FA3B1;
+    -fx-font-size: 13px;
+}
+
+.dialog-pane .button-bar .button {
+    -fx-background-color: #0077B6;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
+
+.dialog-pane .button-bar .button:hover {
+    -fx-background-color: #00C2FF;
+    -fx-text-fill: #0D1B2A;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   LOGIN VIEW
+   ════════════════════════════════════════════════════════════════════ */
+
+/* VBox raíz del login */
+.login-root {
+    -fx-background-color: #0D1B2A;
+    -fx-padding: 40 50;
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
+
+/* Título login */
+.login-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ECF0F1;
+    -fx-font-family: "Segoe UI Light";
+}
+
+/* Acento cyan en el título */
+.login-title-accent {
+    -fx-text-fill: #00C2FF;
+    -fx-font-weight: bold;
+}
+
+/* Label de error */
+.label-error {
+    -fx-text-fill: #E74C3C;
+    -fx-font-size: 12px;
+    -fx-wrap-text: true;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   BARRA SUPERIOR (si se agrega un header en el FXML principal)
+   ════════════════════════════════════════════════════════════════════ */
+
+.top-bar {
+    -fx-background-color: #1B3A5C;
+    -fx-padding: 12 20;
+    -fx-border-color: #00C2FF;
+    -fx-border-width: 0 0 2 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 3);
+}
+
+.top-bar-title {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.top-bar-subtitle {
+    -fx-text-fill: #00C2FF;
+    -fx-font-size: 11px;
+}
+
+/* Badge de empleado logueado */
+.badge-empleado {
+    -fx-background-color: rgba(0,194,255,0.15);
+    -fx-border-color: #00C2FF;
+    -fx-border-width: 1;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 4 14;
+    -fx-text-fill: #00C2FF;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   UTILIDADES
+   ════════════════════════════════════════════════════════════════════ */
+
+/* Divider visual entre secciones */
+.section-divider {
+    -fx-background-color: #253D56;
+    -fx-min-height: 1;
+    -fx-max-height: 1;
+    -fx-pref-height: 1;
+}
+
+/* Tag de estado inline */
+.tag-vigente   { -fx-background-color: rgba(0,184,148,0.18);  -fx-text-fill: #00B894; -fx-background-radius: 5; -fx-padding: 2 8; -fx-font-size: 11px; -fx-font-weight: bold; }
+.tag-pendiente { -fx-background-color: rgba(243,156,18,0.18); -fx-text-fill: #F39C12; -fx-background-radius: 5; -fx-padding: 2 8; -fx-font-size: 11px; -fx-font-weight: bold; }
+.tag-suspendido{ -fx-background-color: rgba(231,76,60,0.18);  -fx-text-fill: #E74C3C; -fx-background-radius: 5; -fx-padding: 2 8; -fx-font-size: 11px; -fx-font-weight: bold; }
+.tag-sinplan   { -fx-background-color: rgba(143,163,177,0.15);-fx-text-fill: #8FA3B1; -fx-background-radius: 5; -fx-padding: 2 8; -fx-font-size: 11px; -fx-font-weight: bold; }

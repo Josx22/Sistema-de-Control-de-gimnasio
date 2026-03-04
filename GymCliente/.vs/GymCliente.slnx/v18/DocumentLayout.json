@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\2026\\Modulo3.1-30\\GymCliente\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|d:\\2026\\modulo3.1-30\\gymcliente\\gymcliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|solutionrelative:gymcliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|d:\\2026\\modulo3.1-30\\gymcliente\\gymcliente\\views\\socio\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|solutionrelative:gymcliente\\views\\socio\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|d:\\2026\\modulo3.1-30\\gymcliente\\gymcliente\\controllers\\sociocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|solutionrelative:gymcliente\\controllers\\sociocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|d:\\2026\\modulo3.1-30\\gymcliente\\gymcliente\\views\\socio\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|solutionrelative:gymcliente\\views\\socio\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|d:\\2026\\modulo3.1-30\\gymcliente\\gymcliente\\service\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|solutionrelative:gymcliente\\service\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|d:\\2026\\modulo3.1-30\\gymcliente\\gymcliente\\models\\sociostatusmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|solutionrelative:gymcliente\\models\\sociostatusmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|d:\\2026\\modulo3.1-30\\gymcliente\\gymcliente\\models\\planwebmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|solutionrelative:gymcliente\\models\\planwebmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|d:\\2026\\modulo3.1-30\\gymcliente\\gymcliente\\models\\maquinariamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|solutionrelative:gymcliente\\models\\maquinariamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|d:\\2026\\modulo3.1-30\\gymcliente\\gymcliente\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|solutionrelative:gymcliente\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|d:\\2026\\modulo3.1-30\\gymcliente\\gymcliente\\wwwroot\\css\\gym-socio.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2237BFEA-E2BB-4604-E206-EA1D763E5C20}|GymCliente\\GymCliente.csproj|solutionrelative:gymcliente\\wwwroot\\css\\gym-socio.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Views\\Socio\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "GymCliente\\Views\\Socio\\Dashboard.cshtml",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Views\\Socio\\Dashboard.cshtml",
+              "RelativeToolTip": "GymCliente\\Views\\Socio\\Dashboard.cshtml",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAAMIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-02T03:11:07.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Service\\ApiService.cs",
+              "RelativeDocumentMoniker": "GymCliente\\Service\\ApiService.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Service\\ApiService.cs",
+              "RelativeToolTip": "GymCliente\\Service\\ApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T03:09:32.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SocioStatusModel.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Models\\SocioStatusModel.cs",
+              "RelativeDocumentMoniker": "GymCliente\\Models\\SocioStatusModel.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Models\\SocioStatusModel.cs",
+              "RelativeToolTip": "GymCliente\\Models\\SocioStatusModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T03:07:53.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SocioController.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Controllers\\SocioController.cs",
+              "RelativeDocumentMoniker": "GymCliente\\Controllers\\SocioController.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Controllers\\SocioController.cs",
+              "RelativeToolTip": "GymCliente\\Controllers\\SocioController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T02:57:25.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlanWebModel.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Models\\PlanWebModel.cs",
+              "RelativeDocumentMoniker": "GymCliente\\Models\\PlanWebModel.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Models\\PlanWebModel.cs",
+              "RelativeToolTip": "GymCliente\\Models\\PlanWebModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T03:07:22.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MaquinariaModel.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Models\\MaquinariaModel.cs",
+              "RelativeDocumentMoniker": "GymCliente\\Models\\MaquinariaModel.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Models\\MaquinariaModel.cs",
+              "RelativeToolTip": "GymCliente\\Models\\MaquinariaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T03:07:10.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Views\\Socio\\Login.cshtml",
+              "RelativeDocumentMoniker": "GymCliente\\Views\\Socio\\Login.cshtml",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Views\\Socio\\Login.cshtml",
+              "RelativeToolTip": "GymCliente\\Views\\Socio\\Login.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-02T03:59:47.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\appsettings.json",
+              "RelativeDocumentMoniker": "GymCliente\\appsettings.json",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\appsettings.json",
+              "RelativeToolTip": "GymCliente\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-03T18:06:24.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "gym-socio.css",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\wwwroot\\css\\gym-socio.css",
+              "RelativeDocumentMoniker": "GymCliente\\wwwroot\\css\\gym-socio.css",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\wwwroot\\css\\gym-socio.css",
+              "RelativeToolTip": "GymCliente\\wwwroot\\css\\gym-socio.css",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAwFsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-02T17:36:18.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Program.cs",
+              "RelativeDocumentMoniker": "GymCliente\\Program.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymCliente\\GymCliente\\Program.cs",
+              "RelativeToolTip": "GymCliente\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T03:16:57.117Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

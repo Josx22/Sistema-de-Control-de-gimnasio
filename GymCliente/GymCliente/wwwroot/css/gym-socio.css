@@ -1,0 +1,132 @@
+:root {
+    --primary: #ffb612; /* El amarillo de Smart Fit */
+    --primary-hover: #e5a410;
+    --bg-light: #ffffff;
+    --text-dark: #333333;
+    --gray-bg: #f8f8f8;
+    --shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sf-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Titulares con color compartido */
+.sf-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-transform: none;
+}
+
+    .sf-title span {
+        color: var(--primary);
+    }
+
+/* Panel Superior: Status del Usuario */
+.sf-user-bar {
+    background: var(--gray-bg);
+    padding: 20px 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    box-shadow: var(--shadow);
+}
+
+/* Botón Amarillo Clásico (¡Inscríbete ya!) */
+.btn-primary-sf {
+    background-color: var(--primary);
+    color: #000;
+    padding: 18px 45px;
+    border-radius: 40px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: block;
+    margin: 30px auto;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+    .btn-primary-sf:hover {
+        transform: scale(1.05);
+        background-color: var(--primary-hover);
+    }
+
+/* Grid de Maquinaria estilo "Instalaciones" */
+.sf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.sf-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    text-align: center;
+}
+
+    .sf-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: contain;
+        background-color: #fff; /* opcional para que no se vea gris detrás */
+    }
+
+.sf-card-footer {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-top: 1px solid #eee;
+}
+
+/* Listado de planes tipo "Clases Grupales" */
+.sf-planes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.sf-plan-card {
+    border: 2px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .sf-plan-card:hover {
+        border-color: var(--primary);
+        background-color: #fffdf5;
+    }
+
+.btn-cancelar-link {
+    color: #888;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+    margin: 40px auto 0;
+}

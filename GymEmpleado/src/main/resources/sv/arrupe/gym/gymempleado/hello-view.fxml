@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="720.0" prefWidth="980.0" spacing="12.0"
+      stylesheets="@gym-empleado.css"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sv.arrupe.gym.gymempleado.HelloController">
+    <padding><Insets bottom="16.0" left="16.0" right="16.0" top="16.0" /></padding>
+
+    <children>
+        <HBox spacing="14.0" VBox.vgrow="NEVER">
+            <children>
+
+                <!-- ── PANEL IZQUIERDO: CONTROL DE ACCESO -->
+                <VBox fx:id="sectionAuditoria" prefWidth="430.0" spacing="14.0"
+                      styleClass="panel-card">
+                    <children>
+
+                        <Label text="Control de Acceso / Buscador"
+                               styleClass="label-section-title" />
+
+                        <HBox spacing="10.0">
+                            <children>
+                                <TextField fx:id="txtBuscarDui"
+                                           promptText="DUI del Cliente"
+                                           HBox.hgrow="ALWAYS" />
+                                <Button onAction="#onActionBuscar"
+                                        prefHeight="36.0" prefWidth="90.0"
+                                        text="Verificar"
+                                        styleClass="btn-verificar" />
+                            </children>
+                        </HBox>
+
+                        <Separator />
+
+                        <Label fx:id="lblNombre" text="---"
+                               wrapText="true"
+                               styleClass="label-nombre" />
+
+                        <Label fx:id="lblVence" text="Membresía: Sin cargar"
+                               styleClass="label-membresia" />
+
+                        <Label fx:id="lblEstado" text="ESTADO"
+                               styleClass="label-estado, label-estado-sinplan" />
+
+                        <Region VBox.vgrow="ALWAYS" />
+
+                        <HBox spacing="10.0">
+                            <children>
+                                <Button onAction="#onActionCancelarPlan"
+                                        prefHeight="42.0"
+                                        styleClass="btn-cancelar-plan"
+                                        text="CANCELAR PLAN ACTUAL"
+                                        HBox.hgrow="ALWAYS" maxWidth="Infinity">
+                                    <font><Font name="Segoe UI Semibold" size="11.0" /></font>
+                                </Button>
+
+                                <Button fx:id="btnSuspender"
+                                        onAction="#onActionSuspenderManual"
+                                        prefHeight="42.0"
+                                        styleClass="btn-suspender"
+                                        text="SUSPENDER CUENTA"
+                                        HBox.hgrow="ALWAYS" maxWidth="Infinity">
+                                    <font><Font name="Segoe UI Semibold" size="11.0" /></font>
+                                </Button>
+                            </children>
+                        </HBox>
+
+                    </children>
+                </VBox>
+
+                <!-- ── PANEL DERECHO: INSCRIPCIÓN Y RENOVACIÓN  -->
+                <VBox prefWidth="490.0" spacing="12.0"
+                      styleClass="panel-card"
+                      HBox.hgrow="ALWAYS">
+                    <children>
+
+                        <Label text="Inscripción / Activación"
+                               styleClass="label-section-title" />
+
+                        <GridPane hgap="10.0" vgap="10.0">
+                            <children>
+                                <TextField fx:id="txtNom"  promptText="Nombre" />
+                                <TextField fx:id="txtApe"  promptText="Apellido"
+                                           GridPane.columnIndex="1" />
+                                <TextField fx:id="txtDuiReg" promptText="DUI"
+                                           GridPane.rowIndex="1" />
+                                <TextField fx:id="txtUser"  promptText="Usuario Web"
+                                           GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <PasswordField fx:id="txtPass" promptText="Password"
+                                               GridPane.rowIndex="2" />
+                                <Label text="Solo llene para nuevos socios"
+                                       styleClass="label-hint"
+                                       GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </children>
+                            <columnConstraints>
+                                <ColumnConstraints prefWidth="215.0" hgrow="ALWAYS" />
+                                <ColumnConstraints prefWidth="215.0" hgrow="ALWAYS" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                            </rowConstraints>
+                        </GridPane>
+
+                        <Separator />
+
+                        <Label text="Asignar Nuevo Plan al socio seleccionado"
+                               styleClass="label-subsection" />
+
+                        <ComboBox fx:id="cbPlanes" maxWidth="Infinity"
+                                  prefHeight="38.0"
+                                  promptText="Seleccionar tipo de membresía..." />
+
+                        <Button onAction="#onActionAsignarMembresiaSimple"
+                                maxWidth="Infinity"
+                                styleClass="btn-activar"
+                                text="SOLO ACTIVAR MEMBRESÍA">
+                            <font><Font name="Segoe UI Semibold" size="12.0" /></font>
+                        </Button>
+
+                        <Button onAction="#onActionRegistrar"
+                                prefHeight="52.0" maxWidth="Infinity"
+                                styleClass="btn-registrar"
+                                text="REGISTRAR NUEVO Y ACTIVAR">
+                            <font><Font name="Segoe UI Semibold" size="13.0" /></font>
+                        </Button>
+
+                    </children>
+                </VBox>
+
+            </children>
+        </HBox>
+
+        <!-- ── PANEL INFERIOR: TABLA DE SOCIOS -->
+        <VBox VBox.vgrow="ALWAYS" spacing="8.0"
+              styleClass="panel-table">
+            <children>
+
+                <Label text="Lista de Clientes Registrados"
+                       styleClass="label-section-title" />
+
+                <TableView fx:id="tblSociosGlobal"
+                           onMouseClicked="#onTableClicked"
+                           VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colDui"    prefWidth="160.0" text="DUI" />
+                        <TableColumn fx:id="colNombre" prefWidth="300.0" text="Nombre Completo" />
+                        <TableColumn fx:id="colStatus" prefWidth="450.0" text="Estado  |  Plan  |  Vencimiento" />
+                    </columns>
+                </TableView>
+
+                <Button onAction="#cargarTablaGlobal"
+                        text="↺  Refrescar Listado"
+                        styleClass="btn-refrescar" />
+
+            </children>
+        </VBox>
+
+    </children>
+</VBox>

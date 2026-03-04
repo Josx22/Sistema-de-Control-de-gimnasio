@@ -1,0 +1,211 @@
+﻿@using GymCliente.Models
+@model List<MaquinariaModel>
+<link rel="stylesheet" href="~/css/gym-socio.css" />
+
+@{
+    Layout = null;
+    bool tienePlanActivo = ViewBag.Socio.id_suscripcion_actual > 0 && ViewBag.Socio.estadoMembresia == "Vigente";
+    bool estaPagado = ViewBag.Socio.esta_pagado;    
+
+    // Colores dinámicos para el estado
+    string colorEstado = "#2ecc71"; // Verde por defecto (Solvente)
+    if (ViewBag.Socio.estadoMembresia == "Cancelada") { colorEstado = "#e74c3c"; } // Rojo
+    else if (!estaPagado && tienePlanActivo) { colorEstado = "#f1c40f"; } // Amarillo/Naranja
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vive la experiencia Gym - Socio</title>
+    <link rel="stylesheet" href="~/css/smart-fit.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Ajuste de la barra superior solicitada */
+        .modern-profile-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px 35px;
+            border-bottom: 3px solid #ffb612;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .user-box h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            text-transform: uppercase;
+        }
+
+        .user-box small {
+            color: #888;
+            font-weight: 600;
+        }
+
+        .status-indicator {
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 0.75rem;
+            border: 1px solid rgba(0,0,0,0.05);
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .section-locked {
+            filter: grayscale(1);
+            opacity: 0.6;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. BARRA DE USUARIO -->
+    <header class="modern-profile-bar">
+        <div class="user-box">
+            <small>BIENVENIDO SOCIO</small>
+            <h2>@ViewBag.Socio.nombre</h2>
+        </div>
+        <div style="text-align: right;">
+            <div class="status-indicator" style="background-color: @colorEstado;">
+                @(ViewBag.Socio.estadoMembresia == "Vigente" && !estaPagado ? "PENDIENTE DE PAGO" : ViewBag.Socio.estadoMembresia)
+            </div>
+            <div style="font-size: 0.7rem; color: #aaa; margin-top: 5px;">DUI: @ViewBag.Socio.dui</div>
+        </div>
+    </header>
+
+    <div class="sf-container">
+
+        <!-- 2. PANEL DE GESTIÓN -->
+        @if (tienePlanActivo)
+        {
+            <div style="background: white; border: 1.5px solid #eee; padding: 25px; border-radius: 15px; margin-bottom: 50px; box-shadow: var(--shadow); text-align: center;">
+                <h4 style="margin:0 0 10px 0;">GESTIONA TU PLAN: <b style="color:#ffb612">@ViewBag.Socio.nombrePlan.ToUpper()</b></h4>
+                <p style="font-size: 0.9rem;">Acceso disponible hasta: <b>@ViewBag.Socio.ultimaMembresia</b></p>
+
+                <div style="display:flex; justify-content:center; gap:15px; margin-top: 20px;">
+                    @if (!estaPagado)
+                    {
+                        <button onclick="realizarPago(@ViewBag.Socio.id_suscripcion_actual)" class="btn-primary-sf" style="margin:0; width: auto; background-color: #2ecc71;">
+                            PAGAR MEMBRESÍA
+                        </button>
+                    }
+                    else
+                    {
+                        <div style="padding: 12px 25px; background: #e8f5e9; color: #2e7d32; border-radius: 40px; font-weight: bold;">✓ PAGO REALIZADO</div>
+                    }
+
+                    <button onclick="confirmarCancelacion(@ViewBag.Socio.id_suscripcion_actual)" class="btn-primary-sf" style="margin:0; width: auto; background-color: #e67e22;">
+                        CANCELAR SUSCRIPCIÓN
+                    </button>
+                </div>
+            </div>
+        }
+
+        <h1 class="sf-title">Vive la <span>experiencia Gym</span></h1>
+
+        <!-- MÁQUINAS EN FUNCIONAMIENTO  -->
+        <div class="sf-grid">
+            @foreach (var m in Model)
+            {
+                <div class="sf-card">
+                    @if (!string.IsNullOrEmpty(m.imagen_url))
+                    {
+                       
+                        string imgSrc = (m.imagen_url.StartsWith("http://") || m.imagen_url.StartsWith("https://"))
+                            ? m.imagen_url
+                            : "http://localhost:5195" + m.imagen_url;
+                        <img src="@imgSrc" alt="equipo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                        <div style="height: 220px; background: #f9f9f9; display: none; align-items: center; justify-content: center; color: #ccc;">S/F</div>
+                    }
+                    else
+                    {
+                        <div style="height: 220px; background: #f9f9f9; display: flex; align-items: center; justify-content: center; color: #ccc;">S/F</div>
+                    }
+                    <div class="sf-card-footer">@m.Nombre</div>
+                </div>
+            }
+        </div>
+
+        <!--SELECCIÓN AUTÓNOMA -->
+        @if (tienePlanActivo)
+        {
+            <div style="margin-top: 60px; padding: 30px; border-radius: 15px; background-color: #f8f9fa; border: 1px dashed #ccc; text-align:center;">
+                <p style="color: #666; font-style: italic;">Tienes una suscripción vigente. No puedes elegir otra membresía hasta que canceles la actual o expire.</p>
+            </div>
+        }
+        else
+        {
+            <h1 class="sf-title" style="margin-top: 80px;">Consigue tu <span>Pase de Entrenamiento</span></h1>
+            <div class="sf-planes-grid">
+                @foreach (var p in ViewBag.Planes)
+                {
+                    <div class="sf-plan-card" onclick="confirmarCompra(@p.id_plan, '@p.nombre_plan')">
+                        <h3 style="color: var(--primary); margin:0;">@p.nombre_plan</h3>
+                        <p><b>$@p.precio_simulado</b> / @p.duracion_dias días</p>
+                        <small style="color:red">Monto penalización: $@p.monto_penalizacion</small>
+                    </div>
+                }
+            </div>
+        }
+
+        <!-- PROTECCIÓN SI ESTÁ BANEADO-->
+        @if (ViewBag.Socio.estado_usuario == "Suspendido")
+        {
+            <div style="position: fixed; top:0; left:0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); color: white; display:flex; align-items:center; justify-content:center; text-align:center; z-index:10000;">
+                <div>
+                    <h1 style="font-size: 5rem;">🔒</h1>
+                    <h2>ACCESO BLOQUEADO</h2>
+                    <p>Tu cuenta ha sido suspendida manualmente por el administrador.<br>Debes solventar tu estatus en recepción para habilitar el portal web.</p>
+                </div>
+            </div>
+        }
+
+    </div>
+
+    <script>
+        function realizarPago(id) {
+            if (confirm("¿Confirmas que deseas pagar esta membresía?\n\nEsta acción sumará dinero al reporte contable del Administrador.")) {
+                window.location.href = "/Socio/PagarYa?idSub=" + id;
+            }
+        }
+
+        function confirmarCompra(id, nombre) {
+            if (confirm("Deseas elegir el " + nombre + "?\n\nTu cuenta quedará en estado deudora hasta que registres el pago. ¿Deseas continuar?")) {
+                window.location.href = "/Socio/ComprarPlan?idPlan=" + id;
+            }
+        }
+
+                       function confirmarCancelacion(id) {
+            var precio = parseFloat("@ViewBag.Socio.precio_plan");
+            var multa = parseFloat("@ViewBag.Socio.monto_penalizacion");
+            var yaPagado = @ViewBag.Socio.esta_pagado.ToString().ToLower();
+
+            let mensaje = "";
+
+            if (yaPagado) {
+                mensaje = "Ya pagaste tu membresía. Si cancelas ahora, se registrará la multa de $" + multa + ". ¿Proceder?";
+            } else {
+                var total = (precio + multa).toFixed(2);
+                mensaje = "¡ADVERTENCIA!\n\nAl no haber pagado y cancelar por la web, el sistema cobrará:\n" +
+                          "- Membresía: $" + precio + "\n" +
+                          "- Multa: $" + multa + "\n" +
+                          "-----------------------\n" +
+                          "TOTAL A CARGAR: $" + total + "\n\n" +
+                          "¿Deseas confirmar la cancelación con este cargo?";
+            }
+
+            if (confirm(mensaje)) {
+                window.location.href = "/Socio/CancelarWeb?idSub=" + id;
+            }
+        }
+    </script>
+
+</body>
+</html>

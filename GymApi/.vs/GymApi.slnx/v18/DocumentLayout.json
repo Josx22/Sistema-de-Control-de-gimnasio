@@ -1,0 +1,364 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\2026\\Modulo3.1-30\\GymApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\controllers\\maquinariacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\controllers\\maquinariacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\controllers\\pagoscontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\controllers\\pagoscontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\controllers\\planescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\controllers\\planescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\controllers\\suscripcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\controllers\\suscripcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\data\\gymcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\data\\gymcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\dtos\\suscripciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\dtos\\suscripciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\models\\maquinaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\models\\maquinaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\models\\pagosimulado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\models\\pagosimulado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\models\\planmembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\models\\planmembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\models\\suscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\models\\suscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\gymapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\gymapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|d:\\2026\\modulo3.1-30\\gymapi\\gymapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E1E15C55-745F-50AC-76C2-1193C2A69963}|GymApi\\GymApi.csproj|solutionrelative:gymapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SuscripcionDTO.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\DTOs\\SuscripcionDTO.cs",
+              "RelativeDocumentMoniker": "GymApi\\DTOs\\SuscripcionDTO.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\DTOs\\SuscripcionDTO.cs",
+              "RelativeToolTip": "GymApi\\DTOs\\SuscripcionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T04:19:22.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GymContext.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Data\\GymContext.cs",
+              "RelativeDocumentMoniker": "GymApi\\Data\\GymContext.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Data\\GymContext.cs",
+              "RelativeToolTip": "GymApi\\Data\\GymContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:29:34.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "GymApi\\Controllers\\UsuariosController.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "GymApi\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAuwBQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T04:19:59.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SuscripcionController.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\SuscripcionController.cs",
+              "RelativeDocumentMoniker": "GymApi\\Controllers\\SuscripcionController.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\SuscripcionController.cs",
+              "RelativeToolTip": "GymApi\\Controllers\\SuscripcionController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAuwIYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T04:20:43.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlanesController.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\PlanesController.cs",
+              "RelativeDocumentMoniker": "GymApi\\Controllers\\PlanesController.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\PlanesController.cs",
+              "RelativeToolTip": "GymApi\\Controllers\\PlanesController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwDMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T04:20:30.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PagosController .cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\PagosController .cs",
+              "RelativeDocumentMoniker": "GymApi\\Controllers\\PagosController .cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\PagosController .cs",
+              "RelativeToolTip": "GymApi\\Controllers\\PagosController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T04:03:48.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MaquinariaController.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\MaquinariaController.cs",
+              "RelativeDocumentMoniker": "GymApi\\Controllers\\MaquinariaController.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\MaquinariaController.cs",
+              "RelativeToolTip": "GymApi\\Controllers\\MaquinariaController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T04:20:15.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "GymApi\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "GymApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T04:19:36.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Program.cs",
+              "RelativeDocumentMoniker": "GymApi\\Program.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Program.cs*",
+              "RelativeToolTip": "GymApi\\Program.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:15:37.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Maquinaria.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\Maquinaria.cs",
+              "RelativeDocumentMoniker": "GymApi\\Models\\Maquinaria.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\Maquinaria.cs",
+              "RelativeToolTip": "GymApi\\Models\\Maquinaria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:47:05.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PagoSimulado.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\PagoSimulado.cs",
+              "RelativeDocumentMoniker": "GymApi\\Models\\PagoSimulado.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\PagoSimulado.cs",
+              "RelativeToolTip": "GymApi\\Models\\PagoSimulado.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:49:31.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlanMembresia.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\PlanMembresia.cs",
+              "RelativeDocumentMoniker": "GymApi\\Models\\PlanMembresia.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\PlanMembresia.cs",
+              "RelativeToolTip": "GymApi\\Models\\PlanMembresia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:49:49.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Suscripcion.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\Suscripcion.cs",
+              "RelativeDocumentMoniker": "GymApi\\Models\\Suscripcion.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\Suscripcion.cs",
+              "RelativeToolTip": "GymApi\\Models\\Suscripcion.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:47:19.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\Rol.cs",
+              "RelativeDocumentMoniker": "GymApi\\Models\\Rol.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\Rol.cs",
+              "RelativeToolTip": "GymApi\\Models\\Rol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:41:42.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "GymApi\\Models\\Usuario.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Models\\Usuario.cs",
+              "RelativeToolTip": "GymApi\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:43:11.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\appsettings.json",
+              "RelativeDocumentMoniker": "GymApi\\appsettings.json",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\appsettings.json",
+              "RelativeToolTip": "GymApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-25T20:27:45.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "GymApi\\appsettings.Development.json",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\appsettings.Development.json",
+              "RelativeToolTip": "GymApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-04T01:58:23.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GymApi.http",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\GymApi.http",
+              "RelativeDocumentMoniker": "GymApi\\GymApi.http",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\GymApi.http",
+              "RelativeToolTip": "GymApi\\GymApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-04T01:58:56.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "GymApi\\WeatherForecast.cs",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\WeatherForecast.cs",
+              "RelativeToolTip": "GymApi\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T16:37:58.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "GymApi\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\2026\\Modulo3.1-30\\GymApi\\GymApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "GymApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-26T04:30:17.415Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
